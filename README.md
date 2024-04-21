@@ -44,3 +44,11 @@ nohup python3 run.py
 ```
 tail -f nohup.out
 ```
+
+# Usage
+
+![alt text](image-1.png)
+
+# Structure
+
+![alt text](image.png)
