@@ -1,0 +1,5 @@
+slack
+python-dotenv
+slack_sdk
+flask
+flask_restx
