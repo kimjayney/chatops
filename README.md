@@ -22,6 +22,12 @@ BOT_PFSENSE_PW=<PFSENSE PW>
 
 - `bots/pfsense.py`
 - `bots/your_want_botname.py`
+- `run.py` to add bot
+
+```
+from bots.pfsense import Pfsenses
+api.add_namespace(Pfsenses, '/pfsense')
+```
 
 # Run bot
 
