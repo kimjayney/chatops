@@ -52,3 +52,7 @@ tail -f nohup.out
 # Structure
 
 ![alt text](image.png)
+
+# NAT rule to Alias
+
+![alt text](image-2.png)
