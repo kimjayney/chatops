@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv(verbose=True)
 
 app = Flask(__name__)  
-api = Api(app)   
+api = Api(app, doc=False)   
 from slackapi import SlackAPI
 import os
 token = os.getenv("SLACK_TOKEN")

@@ -3,7 +3,7 @@ from flask_restx import Resource, Api, Namespace
 Pfsenses = Namespace('pfsense')
 import os
 import requests
-@Pfsenses.route('') 
+@Pfsenses.route('', doc=False ) 
 class SetIPAddr(Resource):
     def get(self):  
         if request.args.get("secret") == os.getenv("BOT_PFSENSE_SECRET"):
