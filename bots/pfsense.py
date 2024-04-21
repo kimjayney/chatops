@@ -16,7 +16,7 @@ class SetIPAddr(Resource):
                     'Content-Type': 'application/json'
                 }
                 data = {
-                    "address": [request.args.post("text")],
+                    "address": [request.form['text']],
                     "apply": True,
                     "descr": "string",
                     "detail": ["string"],
