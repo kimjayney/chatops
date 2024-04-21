@@ -5,7 +5,7 @@ import os
 import requests
 @Pfsenses.route('', doc=False ) 
 class SetIPAddr(Resource):
-    def get(self):  
+    def post(self):  
         if request.args.get("secret") == os.getenv("BOT_PFSENSE_SECRET"):
             response = requests.post(os.getenv("BOT_PFSENSE_URL"), auth=(os.getenv("BOT_PFSENSE_ID"), os.getenv("BOT_PFSENSE_PW"))).json()
 
@@ -16,7 +16,7 @@ class SetIPAddr(Resource):
                     'Content-Type': 'application/json'
                 }
                 data = {
-                    "address": [request.args.get("text")],
+                    "address": [request.args.post("text")],
                     "apply": True,
                     "descr": "string",
                     "detail": ["string"],
